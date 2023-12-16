@@ -1,0 +1,99 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "ExampleService2",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/service2/op1": {
+            "post": {
+                "operationId": "Service2Operation1",
+                "responses": {
+                    "204": {
+                        "description": "Service2Operation1 204 response"
+                    },
+                    "404": {
+                        "description": "NotFound 404 response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/NotFoundResponseContent"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/service2/op2": {
+            "post": {
+                "operationId": "Service2Operation2",
+                "responses": {
+                    "204": {
+                        "description": "Service2Operation2 204 response"
+                    },
+                    "404": {
+                        "description": "NotFound 404 response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/NotFoundResponseContent"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "InternalServerError 500 response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/InternalServerErrorResponseContent"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "InternalServerErrorResponseContent": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "integer",
+                        "default": 500,
+                        "format": "int32"
+                    },
+                    "message": {
+                        "type": "string",
+                        "default": "Internal server error."
+                    }
+                },
+                "required": [
+                    "code",
+                    "message"
+                ]
+            },
+            "NotFoundResponseContent": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "integer",
+                        "default": 404,
+                        "format": "int32"
+                    },
+                    "message": {
+                        "type": "string",
+                        "default": "Resource not found."
+                    }
+                },
+                "required": [
+                    "code",
+                    "message"
+                ]
+            }
+        }
+    }
+}

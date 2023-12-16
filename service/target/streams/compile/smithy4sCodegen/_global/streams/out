@@ -1,0 +1,39 @@
+[0m[[0m[31merror[0m] [0m[0msoftware.amazon.smithy.model.validation.ValidatedResultException: Result contained ERROR severity validation events: [0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation1: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:14:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#InternalServerError` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation1: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:14:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#InternalServerError` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m	at software.amazon.smithy.model.validation.ValidatedResult.validate(ValidatedResult.java:145)[0m
+[0m[[0m[31merror[0m] [0m[0m	at software.amazon.smithy.model.validation.ValidatedResult.unwrap(ValidatedResult.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at smithy4s.codegen.internals.ModelLoader$.load(ModelLoader.scala:103)[0m
+[0m[[0m[31merror[0m] [0m[0m	at smithy4s.codegen.internals.CodegenImpl$.processSpecs(CodegenImpl.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at smithy4s.codegen.Codegen$.processSpecs(Codegen.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at smithy4s.codegen.Smithy4sCodegenPlugin$.$anonfun$cachedSmithyCodegen$9(Smithy4sCodegenPlugin.scala:410)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function$.$anonfun$untupled$1(Function.scala:110)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:220)[0m
+[0m[[0m[31merror[0m] [0m[0m	at smithy4s.codegen.Smithy4sCodegenPlugin$.$anonfun$cachedSmithyCodegen$1(Smithy4sCodegenPlugin.scala:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:292)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:842)[0m
+[0m[[0m[31merror[0m] [0m[0m(service / Compile / [31msmithy4sCodegen[0m) software.amazon.smithy.model.validation.ValidatedResultException: Result contained ERROR severity validation events: [0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation1: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:14:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#InternalServerError` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service1.smithy#Service1Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service1.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService1.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation1: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:14:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#InternalServerError` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:19:1[0m
+[0m[[0m[31merror[0m] [0m[0m[ERROR] com.example.service2.smithy#Service2Operation2: operation shape has an `error` relationship to an unresolved shape `com.example.service2.smithy#NotFound` | Target /Users/arigas/Workspace/smithy4s-error-handler/service/src/main/smithy/ExampleService2.smithy:19:1[0m
