@@ -6,6 +6,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../service">
       <sourceFolder url="file://$MODULE_DIR$/../../service/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../service/target/scala-2.13/resource_managed/main" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../service/target/scala-2.13/src_managed/main" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../service/target" />
     </content>
